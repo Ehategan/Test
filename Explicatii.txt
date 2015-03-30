@@ -1,7 +1,7 @@
 Explicatii
 
  - rezolvarea problemelor a fost structurata pe foldere
- - unit testing-ul a fost realizat folosind JSUnit descarcat de la adresa : 
+ - unit testing-ul a fost realizat folosind JSUnit descarcat de la adresa : http://sourceforge.net/projects/jsunit/files/
  - am adaugat si un fisier html (index) pentru o rulare usoara
  - codul propriu zis se gaseste in fisierele .js
  
