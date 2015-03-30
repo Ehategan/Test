@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>TestPage Tests</title>
+    <link rel="stylesheet" type="text/css" href="../css/jsUnitStyle.css">
+    <script type="text/javascript" src="../app/jsUnitCore.js"></script>
+	<script type="text/javascript">
+		function largestTwoNumbers(array){
+			if(array){
+				var Max = Math.max.apply(Math, array);
+				array.splice(array.indexOf(Max), 1);
+				var SecondMax = Math.max.apply(null, array);
+			}
+			return (SecondMax + " and " + Max);
+		}
+	</script>
+</head>
+<body>
+	<script type="text/javascript" charset="utf-8">
+		function test_largestTwoNumbers(){
+			var array = [];
+			var n = 10; 
+			var k = 100;
+			for (var i = 0; i < n; i++) {
+				array.push(Math.round(Math.random() * k));
+			}
+			document.write("Generated Array is = " + array + " ----- " + largestTwoNumbers(array));
+		}
+	</script>
+</body>
+</html>
+	
